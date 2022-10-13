@@ -29,8 +29,7 @@ blocks:
             - checkout
             - cache restore
             - cache store
-            - bundle exec rubocop
-            - bundle exec brakeman
+
   - name: Unit tests
     dependencies:
       - Code scanning
@@ -47,10 +46,8 @@ blocks:
       jobs:
         - name: RSpec - model tests
           commands:
-            - bundle exec rspec spec/models
         - name: RSpec - controller tests
           commands:
-            - bundle exec rspec spec/controllers
       epilogue:
         always:
           commands:
@@ -71,7 +68,6 @@ blocks:
           commands:
             - sem-service start postgres
             - 'bundle exec rake db:setup'
-            - bundle exec rspec spec/features
       epilogue:
         always:
           commands:
