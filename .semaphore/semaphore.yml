@@ -15,7 +15,7 @@ blocks:
             - sem-version node 14.16.1
             - checkout
             - cache restore
-            - bundle install
+
             - cache store
   - name: Code scanning
     dependencies:
@@ -42,7 +42,6 @@ blocks:
           - sem-version node 14.16.1
           - checkout
           - cache restore
-          - bundle install
           - cache store
           - sem-service start postgres
           - 'bundle exec rake db:setup'
@@ -67,7 +66,6 @@ blocks:
           - sem-version node 14.16.1
           - checkout
           - cache restore
-          - bundle install
           - cache store
       jobs:
         - name: RSpec - feature specs
