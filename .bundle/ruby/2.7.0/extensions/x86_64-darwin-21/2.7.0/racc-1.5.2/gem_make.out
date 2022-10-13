@@ -1,0 +1,16 @@
+current directory: /Users/nathang/Desktop/testing/.bundle/ruby/2.7.0/gems/racc-1.5.2/ext/racc/cparse
+/Users/nathang/.rvm/rubies/ruby-2.7.3/bin/ruby -I /Users/nathang/.rvm/rubies/ruby-2.7.3/lib/ruby/2.7.0 -r ./siteconf20221013-21954-igc2ne.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/nathang/Desktop/testing/.bundle/ruby/2.7.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/nathang/Desktop/testing/.bundle/ruby/2.7.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/nathang/Desktop/testing/.bundle/ruby/2.7.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20221013-21954-1wogx10/racc

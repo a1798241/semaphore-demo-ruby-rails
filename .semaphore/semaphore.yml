@@ -1,5 +1,5 @@
 version: v1.0
-name: Demo Rails 6 app
+name: Demo Rails 6000 app
 agent:
   machine:
     type: e1-standard-2
